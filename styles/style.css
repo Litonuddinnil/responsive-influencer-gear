@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.popins-font{
+    font-family: "Poppins", sans-serif;   
+}
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+}
+/* shared style */
+.display-flex{
+    display: flex;
+}
+:root{
+    --primary-color:rgba(58, 58, 58, 1);
+}
+.btn-primary{
+    background-color:rgba(224, 44, 109, 1);
+    border-radius: 41px;
+    color: white;
+    border: none;
+    padding: 10px 56px 10px 24px;
+    font-size: 1rem;
+    font-weight:  bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 10px; */
+    cursor: pointer;
+}
+.arrow{
+    /* display: inline-block; */
+    margin-left: 10px;
+    padding-top: 6px;
+}
+/* navbar style */
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    gap: 34px;
+    margin: 0 auto;
+    margin:90px 120px 50px 120px;
+}
+nav > ul{
+    gap: 34px;
+   
+}
+.nav-item{
+    text-decoration: none;
+    color: var(--primary-color);
+  
+}
+nav > ul > li{
+    list-style: none;
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 110px;
+    
+    
+}
+.product-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 126px;
+   
+}
+/* banner related style */
+.banner{
+    gap: 153px;
+    margin-right: 132px;
+    margin-left: 120px;
+}
+.banner-text{
+    width: 582px;
+    height: 270px;
+    color: var(--primary-color);
+  
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 3.25rem;
+    padding-bottom: 16px;
+   
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+.banner-imag{
+    width: 475px;
+    height: 475px;
+}
+.banner-imag img{
+    background-image: url('../images/Circle\ design.svg');
+    background-size: cover;
+}
+/* companies logo design */
+.companies-logo{
+    margin: 100px 165px 100px 165px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 61px;
+    background-color:white;
+    padding: 36px 61px 34px 62px;
+    box-shadow: black;
+    justify-content: center;
+    align-items: center;
+}
+/* responsive for small device */
+@media screen and (max-width:576px) {
+    .navbar,.nav-topic{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+    nav > ul > li,.product-title{
+        margin-bottom: 10px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .banner-imag{
+       
+    }
+     
+    .companies-logo{
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+    }
+     
+    .banner-text{
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 0px;
+      width: 100%;
+      margin-bottom: 150px;
+    }
+   
+     
+}
